@@ -73,6 +73,12 @@ struct TelaCriarSala: View {
                     
                     Spacer()
                 }
+                Image("Hands3")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 414, height: 316)
+                    .offset(y: 40)
+                    
             }
         }
     }
