@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		552664692618FECA0074509C /* TelaCriarSala.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552664682618FECA0074509C /* TelaCriarSala.swift */; };
 		CB348F002618F20A001C589B /* ObscureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB348EFF2618F20A001C589B /* ObscureApp.swift */; };
 		CB348F022618F20A001C589B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB348F012618F20A001C589B /* ContentView.swift */; };
 		CB348F042618F20B001C589B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB348F032618F20B001C589B /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		552664682618FECA0074509C /* TelaCriarSala.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaCriarSala.swift; sourceTree = "<group>"; };
 		CB348EFC2618F20A001C589B /* Obscure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Obscure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB348EFF2618F20A001C589B /* ObscureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObscureApp.swift; sourceTree = "<group>"; };
 		CB348F012618F20A001C589B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			children = (
 				CB348EFF2618F20A001C589B /* ObscureApp.swift */,
 				CB348F012618F20A001C589B /* ContentView.swift */,
+				552664682618FECA0074509C /* TelaCriarSala.swift */,
 				CB348F032618F20B001C589B /* Assets.xcassets */,
 				CB348F082618F20B001C589B /* Info.plist */,
 				CB348F052618F20B001C589B /* Preview Content */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				552664692618FECA0074509C /* TelaCriarSala.swift in Sources */,
 				CB348F022618F20A001C589B /* ContentView.swift in Sources */,
 				CB348F002618F20A001C589B /* ObscureApp.swift in Sources */,
 			);
