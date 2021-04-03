@@ -2,7 +2,7 @@
 Repositório do app feito no hackathon da BRASA, durante o desafio da WildLife.
 
 Participantes:
-- Felipe Bandeira
-- Joanna Guerra
-- Lucas Silva
-- Marina Lima
+- [Felipe Bandeira](https://github.com/FelipeBandeira/) - Ciências Sociais - Minerva
+- [Joanna Guerra](https://github.com/ninaalima) - Economia - Tufts University
+- [Lucas Silva](https://github.com/godsavemenow/) - Ciência da Computação - UFPE
+- [Marina Lima](https://github.com/ninaalima) - Design - UFPE
