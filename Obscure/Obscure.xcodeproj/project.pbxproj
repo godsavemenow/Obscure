@@ -10,6 +10,8 @@
 		552664692618FECA0074509C /* TelaCriarSala.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552664682618FECA0074509C /* TelaCriarSala.swift */; };
 		5530288B26194E1E00446014 /* TelaPuzzle2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5530288A26194E1E00446014 /* TelaPuzzle2.swift */; };
 		55448ED02619FF9400128D1F /* TelaDeNome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55448ECF2619FF9400128D1F /* TelaDeNome.swift */; };
+		55448ED3261A03EA00128D1F /* TelaSalaDeEspera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55448ED2261A03EA00128D1F /* TelaSalaDeEspera.swift */; };
+		55448ED6261A084400128D1F /* TelaEsperaWaiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55448ED5261A084400128D1F /* TelaEsperaWaiting.swift */; };
 		55E2C7BE26190BE9005DB85E /* TelaEntrarSala.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2C7BD26190BE9005DB85E /* TelaEntrarSala.swift */; };
 		55E2C7C126191046005DB85E /* TelaComoJogar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2C7C026191046005DB85E /* TelaComoJogar.swift */; };
 		55E2C7C426193AD3005DB85E /* TelaIntroGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2C7C326193AD3005DB85E /* TelaIntroGame.swift */; };
@@ -26,6 +28,8 @@
 		552664682618FECA0074509C /* TelaCriarSala.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaCriarSala.swift; sourceTree = "<group>"; };
 		5530288A26194E1E00446014 /* TelaPuzzle2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaPuzzle2.swift; sourceTree = "<group>"; };
 		55448ECF2619FF9400128D1F /* TelaDeNome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaDeNome.swift; sourceTree = "<group>"; };
+		55448ED2261A03EA00128D1F /* TelaSalaDeEspera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaSalaDeEspera.swift; sourceTree = "<group>"; };
+		55448ED5261A084400128D1F /* TelaEsperaWaiting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaEsperaWaiting.swift; sourceTree = "<group>"; };
 		55E2C7BD26190BE9005DB85E /* TelaEntrarSala.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaEntrarSala.swift; sourceTree = "<group>"; };
 		55E2C7C026191046005DB85E /* TelaComoJogar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaComoJogar.swift; sourceTree = "<group>"; };
 		55E2C7C326193AD3005DB85E /* TelaIntroGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaIntroGame.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				552664682618FECA0074509C /* TelaCriarSala.swift */,
 				55448ECF2619FF9400128D1F /* TelaDeNome.swift */,
 				55E2C7BD26190BE9005DB85E /* TelaEntrarSala.swift */,
+				55448ED2261A03EA00128D1F /* TelaSalaDeEspera.swift */,
+				55448ED5261A084400128D1F /* TelaEsperaWaiting.swift */,
 				55E2C7C326193AD3005DB85E /* TelaIntroGame.swift */,
 				55E2C7C626193E45005DB85E /* TelaPuzzle1.swift */,
 				5530288A26194E1E00446014 /* TelaPuzzle2.swift */,
@@ -166,10 +172,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				55E2C7CA26194027005DB85E /* TelaPuzzle4.swift in Sources */,
+				55448ED3261A03EA00128D1F /* TelaSalaDeEspera.swift in Sources */,
 				552664692618FECA0074509C /* TelaCriarSala.swift in Sources */,
 				CB348F022618F20A001C589B /* ContentView.swift in Sources */,
 				55E942022619608600C4220C /* TelaPuzzle5.swift in Sources */,
 				55E2C7C426193AD3005DB85E /* TelaIntroGame.swift in Sources */,
+				55448ED6261A084400128D1F /* TelaEsperaWaiting.swift in Sources */,
 				55E2C7C126191046005DB85E /* TelaComoJogar.swift in Sources */,
 				55E2C7BE26190BE9005DB85E /* TelaEntrarSala.swift in Sources */,
 				5530288B26194E1E00446014 /* TelaPuzzle2.swift in Sources */,
