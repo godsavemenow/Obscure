@@ -16,18 +16,23 @@ struct TelaIntroGame: View {
                 .ignoresSafeArea()
             VStack {
                 Text("Compre o seu caixão. Eu estou indo atrás de você, \(nomeDoJogador).")
-                    .font(.title2)
-                    .fontWeight(.semibold)
+                    .font(.system(size: 19))
+                    .fontWeight(.regular)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .padding()
                 
                 Text("Para ser mais divertido, você e seus amigos devem resolver os meus enigmas. Se forem rápidos, vocês se livram. Do contrário, as covas que estão abertas serão para vocês.")
-                    .font(.title2)
+                    .font(.system(size: 19))
                     .fontWeight(.regular)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .padding()
+                
+                Image("dedodesangue")
+                    .resizable()
+                    .frame(width: 383, height: 116)
+                    .offset(x: 10, y: 120)
             }
         }
     }
