@@ -1,20 +1,20 @@
 //
-//  TelaEntrarSala.swift
+//  TelaDeNome.swift
 //  Obscure
 //
-//  Created by Felipe on 03/04/21.
+//  Created by Felipe on 04/04/21.
 //
 
 import SwiftUI
 
-struct TelaEntrarSala: View {
+struct TelaDeNome: View {
     @State var CodigoSala = ""
     
     var body: some View {
         ZStack {
             Color.black
                 .ignoresSafeArea()
-           
+            
             VStack{
                 HStack{
                     Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
@@ -26,7 +26,7 @@ struct TelaEntrarSala: View {
                     
                     Spacer()
                     
-                    Text("Entrar numa sala")
+                    Text("Criar sala")
                         .foregroundColor(.white)
                         .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
                         .fontWeight(.semibold)
@@ -38,14 +38,14 @@ struct TelaEntrarSala: View {
                 Spacer()
                 
                 VStack{
-                    Text("Digite o código da sala")
+                    Text("Quem ousa me desafiar?")
                         .font(.title2)
                         .foregroundColor(.white)
                     
                     ZStack {
                         RoundedRectangle(cornerRadius: 5, style: .continuous)
-                                        .fill(Color.white)
-                                        .frame(width: 328, height: 55)
+                            .fill(Color.white)
+                            .frame(width: 328, height: 55)
                         TextField("Código", text: $CodigoSala)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                             .foregroundColor(.black)
@@ -55,35 +55,36 @@ struct TelaEntrarSala: View {
                     }
                 }
                 
-                    Spacer()
-                    
-                    Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
-                        Text("Entrar na sala")
-                            .fontWeight(.medium)
-                            .foregroundColor(.white)
-                            .font(/*@START_MENU_TOKEN@*/.title3/*@END_MENU_TOKEN@*/)
-                            
-                    }.frame(width: 328, height: 50)
-                    .background(Color.red)
-                    .cornerRadius(5)
-                    .padding(.bottom, 400)
-                    
-                    
-                    Spacer()
+                Spacer()
                 
-                }
-            Image("Hands3")
+                Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
+                    Text("Próximo")
+                        .font(.title3)
+                        .fontWeight(.medium)
+                        .foregroundColor(.white)
+                        .font(.headline)
+                    
+                }.frame(width: 328, height: 50)
+                .background(Color.red)
+                .cornerRadius(5)
+                .padding(.bottom, 400)
+                
+                
+                Spacer()
+                
+            }
+            Image("home2")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 414, height: 316)
-                .offset(y: 300)
+                .frame(width: 148, height: 187)
+                .offset(y: 350)
             
-            }
         }
     }
+}
 
-struct TelaEntrarSala_Previews: PreviewProvider {
+struct TelaDeNome_Previews: PreviewProvider {
     static var previews: some View {
-        TelaEntrarSala()
+        TelaDeNome()
     }
 }

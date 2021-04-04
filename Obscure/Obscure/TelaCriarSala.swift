@@ -27,7 +27,7 @@ struct TelaCriarSala: View {
                     
                     Spacer()
                     
-                    Text("CRIAR SALA")
+                    Text("Nova sala")
                         .foregroundColor(.white)
                         .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
                         .fontWeight(.semibold)
@@ -53,14 +53,20 @@ struct TelaCriarSala: View {
                     
                     
                     
-                    Text ("Copiar codigo")
-                        .font(.title3)
-                        .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-                        .padding()
+                    Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
+                        Image("Copicod")
+                            .resizable()
+                            .scaledToFill()
+                            
+                    }.frame(width: 328, height: 50)
+                    .background(Color.black)
+                    .padding()
                     
                     
                     Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
                         Text("Começar o jogo")
+                            .font(.title3)
+                            .fontWeight(.medium)
                             .foregroundColor(.white)
                             
                     }.frame(width: 328, height: 50)

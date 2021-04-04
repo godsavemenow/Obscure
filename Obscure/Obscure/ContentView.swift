@@ -15,9 +15,9 @@ struct ContentView: View {
             VStack{
                 Spacer()
                 VStack {
-                    Circle()
-                        .foregroundColor(.white)
-                        .frame(width: 239, height: 239, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    Image("logo")
+                        .resizable()
+                        .frame(width: 414, height: 333, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 }
                 
                 Spacer()
@@ -25,6 +25,8 @@ struct ContentView: View {
                 VStack{
                     Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
                         Text("Criar sala")
+                            .font(.title3)
+                            .fontWeight(.medium)
                             .foregroundColor(.white)
                             
                     }.frame(width: 328, height: 50)
@@ -36,7 +38,10 @@ struct ContentView: View {
                 
                     Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
                         Text("Entrar numa sala")
+                            .font(.title3)
                             .foregroundColor(.white)
+                            .fontWeight(.medium)
+                            
                             
                     }.frame(width: 328, height: 50)
                     .background(Color.red)
@@ -48,17 +53,24 @@ struct ContentView: View {
                 
                 VStack {
                     Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
-                        Text("COMO JOGAR")
-                            .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
-                            .underline()
-                            .foregroundColor(.white)
+                        Image("comoJogarButton")
+                            .resizable()
+                            .scaledToFill()
+                            
+                    }.frame(width: 328, height: 50)
+                    .background(Color.black)
+                    //.padding()
                     }
+                Image("home2")
+                    .resizable()
+                    .frame(width: 148, height: 187)
+                    .offset(y: 40)
                 }
                 Spacer()
             }
         }
     }
-}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
