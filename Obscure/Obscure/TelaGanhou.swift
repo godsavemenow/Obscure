@@ -1,5 +1,5 @@
 //
-//  TelaTempoAcabou.swift
+//  TelaGanhou.swift
 //  Obscure
 //
 //  Created by Felipe on 04/04/21.
@@ -7,28 +7,33 @@
 
 import SwiftUI
 
-struct TelaTempoAcabou: View {
+struct TelaGanhou: View {
     var body: some View {
         ZStack {
             Color.black
                 .ignoresSafeArea()
             
             VStack {
-                Text("Seu tempo acabou")
+                Spacer()
+                
+                Text("Você venceu")
                     .foregroundColor(.white)
                     .font(.system(size: 28))
-                    .padding()
+                    .padding(.bottom, 20)
                 
-                Text("Espero você dentro do seu espelho")
+                Text("Por pura sorte.")
                     .foregroundColor(.white)
                     .font((.system(size: 19)))
-                    .padding()
+                
+                Text("Não ache que conseguirá se livrar outra vez.")
+                    .foregroundColor(.white)
+                    .font((.system(size: 19)))
                 
                 Spacer()
                 
-                Image("ilustrafinal")
+                Image("ganhou")
                     .resizable()
-                    .frame(width: 219, height: 567)
+                    .frame(width: 400, height: 600)
                     .offset(y: 35)
                     
             }
@@ -36,8 +41,8 @@ struct TelaTempoAcabou: View {
     }
 }
 
-struct TelaTempoAcabou_Previews: PreviewProvider {
+struct TelaGanhou_Previews: PreviewProvider {
     static var previews: some View {
-        TelaTempoAcabou()
+        TelaGanhou()
     }
 }
