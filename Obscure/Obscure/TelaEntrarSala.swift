@@ -42,12 +42,17 @@ struct TelaEntrarSala: View {
                         .font(.title2)
                         .foregroundColor(.white)
                     
-                    TextField("Código", text: $CodigoSala)
-                        //.frame(width: 328, height: 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .foregroundColor(.white)
-                        .background(Color.white)
-                        .padding()
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 5, style: .continuous)
+                                        .fill(Color.white)
+                                        .frame(width: 328, height: 55)
+                        TextField("Código", text: $CodigoSala)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .foregroundColor(.black)
+                            .frame(width: 300.0)
+                            .background(Color.white)
+                            .padding()
+                    }
                 }
                 
                     Spacer()

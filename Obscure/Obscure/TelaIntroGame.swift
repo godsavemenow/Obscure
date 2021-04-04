@@ -28,13 +28,6 @@ struct TelaIntroGame: View {
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .padding()
-                
-//                Text("Se forem rápidos, vocês se livram. Do contrário, as covas que estão abertas serão para vocês.")
-//                    .font(.title2)
-//                    .fontWeight(.semibold)
-//                    .foregroundColor(.white)
-//                    .multilineTextAlignment(.center)
-//                    .padding()
             }
         }
     }
