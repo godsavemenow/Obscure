@@ -40,7 +40,6 @@
 		55448ED8261A0EA400128D1F /* TelaTempoAcabou.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaTempoAcabou.swift; sourceTree = "<group>"; };
 		55AAA80A261A2E6B00BF13ED /* TelaPuzzle3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaPuzzle3.swift; sourceTree = "<group>"; };
 		55CBD776261A3D4E00130994 /* rain-2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "rain-2.mp3"; path = "Assets.xcassets/rain-2.dataset/rain-2.mp3"; sourceTree = "<group>"; };
-		55CBD779261A3E3600130994 /* testevideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = testevideo.mp4; path = ../../../testevideo.mp4; sourceTree = "<group>"; };
 		55CBD77C261A42C600130994 /* TelaGanhou.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaGanhou.swift; sourceTree = "<group>"; };
 		55E2C7BD26190BE9005DB85E /* TelaEntrarSala.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaEntrarSala.swift; sourceTree = "<group>"; };
 		55E2C7C026191046005DB85E /* TelaComoJogar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaComoJogar.swift; sourceTree = "<group>"; };
@@ -107,7 +106,6 @@
 		CB348EFE2618F20A001C589B /* Obscure */ = {
 			isa = PBXGroup;
 			children = (
-				55CBD779261A3E3600130994 /* testevideo.mp4 */,
 				55CBD776261A3D4E00130994 /* rain-2.mp3 */,
 				CB348EFF2618F20A001C589B /* ObscureApp.swift */,
 				CB348F012618F20A001C589B /* ContentView.swift */,
