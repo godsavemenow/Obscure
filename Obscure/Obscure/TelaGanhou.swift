@@ -19,7 +19,7 @@ struct TelaGanhou: View {
                 Text("Você venceu")
                     .foregroundColor(.white)
                     .font(.system(size: 28))
-                    .padding(.bottom, 20)
+                    .padding(.bottom)
                 
                 Text("Por pura sorte.")
                     .foregroundColor(.white)

@@ -32,19 +32,30 @@ struct TelaComoJogar: View {
                         Spacer()
                         
                     }.padding()
-                Text("But I must explain to you how all this mistaken idea of denouncing pleasure and comer o cu de quem tá lendo was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?")
-                    .font(.title3)
-                .padding()
-                .foregroundColor(.white)
-        }
-        }
+                    Text("Obscure é um jogo de enigma do tipo riddle em que você deve solucionar mistérios a cada etapa para vencer. Conte com a ajuda de amigos para desvendar os enigmas antes que o tempo acabe")
+                        .font(.system(size: 19))
+                        .padding()
+                        .foregroundColor(.white)
+                    
+                    Text("Como ganhar")
+                        .foregroundColor(.white)
+                        .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.semibold)
+                        .padding()
+                    
+                    Text("Cada etapa possui determinado tempo para que você e seus amigos solucionem o mistério. Caso o enigma não seja solucionado dentro do tempo estabelecido, uma pessoa aleatória é eliminada do jogo. Ganha-se o jogo se ao menos uma pessoa consegue desvendar todos os enigmas antes que o tempo acabe. Fique de olho, alguns enigmas precisam ser solucionados em equipe.")
+                        .font(.system(size: 19))
+                        .padding()
+                        .foregroundColor(.white)
+                }
+            }
             
         }
-}
-
-struct TelaComoJogar_Previews: PreviewProvider {
-    static var previews: some View {
-        TelaComoJogar()
     }
-}
+    
+    struct TelaComoJogar_Previews: PreviewProvider {
+        static var previews: some View {
+            TelaComoJogar()
+        }
+    }
 }
