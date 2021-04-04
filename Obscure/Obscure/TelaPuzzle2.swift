@@ -1,5 +1,5 @@
 //
-//  TelaPuzzle1.swift
+//  TelaPuzzle2.swift
 //  Obscure
 //
 //  Created by Felipe on 03/04/21.
@@ -7,21 +7,25 @@
 
 import SwiftUI
 
-struct TelaPuzzle1: View {
-    
+struct TelaPuzzle2: View {
     @State var resposta = ""
+    @State var isPlaying: Bool = false
     
     var body: some View {
         ZStack {
             Color.black
                 .ignoresSafeArea()
             VStack {
-                
-                Image("Hands3")
-                    .resizable()
-                    .frame(width: 250, height: 250, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .scaledToFit()
-                    .padding(.bottom, 50)
+                Button(action: {
+                        self.isPlaying.toggle()}) {
+                    Image(self.isPlaying == true ? "pauseButton" : "playerButton")
+                        .resizable()
+                        .frame(width: 340, height: 105, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .scaledToFit()
+                        .padding(.bottom, 200)
+                }
+
+               
                 
                 ZStack {
                     RoundedRectangle(cornerRadius: 5, style: .continuous)
@@ -52,8 +56,8 @@ struct TelaPuzzle1: View {
     }
 }
 
-struct TelaPuzzle1_Previews: PreviewProvider {
+struct TelaPuzzle2_Previews: PreviewProvider {
     static var previews: some View {
-        TelaPuzzle1()
+        TelaPuzzle2()
     }
 }

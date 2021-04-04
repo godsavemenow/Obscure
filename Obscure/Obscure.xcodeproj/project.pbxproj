@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		552664692618FECA0074509C /* TelaCriarSala.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552664682618FECA0074509C /* TelaCriarSala.swift */; };
+		5530288B26194E1E00446014 /* TelaPuzzle2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5530288A26194E1E00446014 /* TelaPuzzle2.swift */; };
 		55E2C7BE26190BE9005DB85E /* TelaEntrarSala.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2C7BD26190BE9005DB85E /* TelaEntrarSala.swift */; };
 		55E2C7C126191046005DB85E /* TelaComoJogar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2C7C026191046005DB85E /* TelaComoJogar.swift */; };
 		55E2C7C426193AD3005DB85E /* TelaIntroGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2C7C326193AD3005DB85E /* TelaIntroGame.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		552664682618FECA0074509C /* TelaCriarSala.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaCriarSala.swift; sourceTree = "<group>"; };
+		5530288A26194E1E00446014 /* TelaPuzzle2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaPuzzle2.swift; sourceTree = "<group>"; };
 		55E2C7BD26190BE9005DB85E /* TelaEntrarSala.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaEntrarSala.swift; sourceTree = "<group>"; };
 		55E2C7C026191046005DB85E /* TelaComoJogar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaComoJogar.swift; sourceTree = "<group>"; };
 		55E2C7C326193AD3005DB85E /* TelaIntroGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaIntroGame.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				55E2C7BD26190BE9005DB85E /* TelaEntrarSala.swift */,
 				55E2C7C326193AD3005DB85E /* TelaIntroGame.swift */,
 				55E2C7C626193E45005DB85E /* TelaPuzzle1.swift */,
+				5530288A26194E1E00446014 /* TelaPuzzle2.swift */,
 				55E2C7C926194027005DB85E /* TelaPuzzle4.swift */,
 				55E2C7C026191046005DB85E /* TelaComoJogar.swift */,
 				CB348F032618F20B001C589B /* Assets.xcassets */,
@@ -162,6 +165,7 @@
 				55E2C7C426193AD3005DB85E /* TelaIntroGame.swift in Sources */,
 				55E2C7C126191046005DB85E /* TelaComoJogar.swift in Sources */,
 				55E2C7BE26190BE9005DB85E /* TelaEntrarSala.swift in Sources */,
+				5530288B26194E1E00446014 /* TelaPuzzle2.swift in Sources */,
 				55E2C7C726193E45005DB85E /* TelaPuzzle1.swift in Sources */,
 				CB348F002618F20A001C589B /* ObscureApp.swift in Sources */,
 			);

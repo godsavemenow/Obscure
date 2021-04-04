@@ -36,7 +36,7 @@ struct TelaPuzzle4: View {
                 
                 
                 Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
-                    Text("Começar o jogo")
+                    Text("Enviar resposta")
                         .foregroundColor(.white)
                         
                 }.frame(width: 328, height: 50)
