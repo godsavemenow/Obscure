@@ -10,6 +10,7 @@
 		552664692618FECA0074509C /* TelaCriarSala.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552664682618FECA0074509C /* TelaCriarSala.swift */; };
 		55E2C7BE26190BE9005DB85E /* TelaEntrarSala.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2C7BD26190BE9005DB85E /* TelaEntrarSala.swift */; };
 		55E2C7C126191046005DB85E /* TelaComoJogar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2C7C026191046005DB85E /* TelaComoJogar.swift */; };
+		55E2C7C426193AD3005DB85E /* TelaIntroGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2C7C326193AD3005DB85E /* TelaIntroGame.swift */; };
 		CB348F002618F20A001C589B /* ObscureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB348EFF2618F20A001C589B /* ObscureApp.swift */; };
 		CB348F022618F20A001C589B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB348F012618F20A001C589B /* ContentView.swift */; };
 		CB348F042618F20B001C589B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB348F032618F20B001C589B /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		552664682618FECA0074509C /* TelaCriarSala.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaCriarSala.swift; sourceTree = "<group>"; };
 		55E2C7BD26190BE9005DB85E /* TelaEntrarSala.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaEntrarSala.swift; sourceTree = "<group>"; };
 		55E2C7C026191046005DB85E /* TelaComoJogar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaComoJogar.swift; sourceTree = "<group>"; };
+		55E2C7C326193AD3005DB85E /* TelaIntroGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaIntroGame.swift; sourceTree = "<group>"; };
 		CB348EFC2618F20A001C589B /* Obscure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Obscure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB348EFF2618F20A001C589B /* ObscureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObscureApp.swift; sourceTree = "<group>"; };
 		CB348F012618F20A001C589B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				CB348F012618F20A001C589B /* ContentView.swift */,
 				552664682618FECA0074509C /* TelaCriarSala.swift */,
 				55E2C7BD26190BE9005DB85E /* TelaEntrarSala.swift */,
+				55E2C7C326193AD3005DB85E /* TelaIntroGame.swift */,
 				55E2C7C026191046005DB85E /* TelaComoJogar.swift */,
 				CB348F032618F20B001C589B /* Assets.xcassets */,
 				CB348F082618F20B001C589B /* Info.plist */,
@@ -149,6 +152,7 @@
 			files = (
 				552664692618FECA0074509C /* TelaCriarSala.swift in Sources */,
 				CB348F022618F20A001C589B /* ContentView.swift in Sources */,
+				55E2C7C426193AD3005DB85E /* TelaIntroGame.swift in Sources */,
 				55E2C7C126191046005DB85E /* TelaComoJogar.swift in Sources */,
 				55E2C7BE26190BE9005DB85E /* TelaEntrarSala.swift in Sources */,
 				CB348F002618F20A001C589B /* ObscureApp.swift in Sources */,
