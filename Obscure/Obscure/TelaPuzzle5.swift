@@ -62,7 +62,7 @@ struct TelaPuzzle5: View {
                 
             }.onAppear {
                 
-                let sound = Bundle.main.path(forResource: "rain-02", ofType: "mp3")
+                let sound = Bundle.main.path(forResource: "rain-2", ofType: "mp3")
                 self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!)) }
 
         }
