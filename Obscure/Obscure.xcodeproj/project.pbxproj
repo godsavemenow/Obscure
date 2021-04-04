@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,12 +13,14 @@
 		55448ED3261A03EA00128D1F /* TelaSalaDeEspera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55448ED2261A03EA00128D1F /* TelaSalaDeEspera.swift */; };
 		55448ED6261A084400128D1F /* TelaEsperaWaiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55448ED5261A084400128D1F /* TelaEsperaWaiting.swift */; };
 		55448ED9261A0EA400128D1F /* TelaTempoAcabou.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55448ED8261A0EA400128D1F /* TelaTempoAcabou.swift */; };
+		55AAA808261A2B1800BF13ED /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AAA807261A2B1800BF13ED /* AnimatedImageView.swift */; };
 		55E2C7BE26190BE9005DB85E /* TelaEntrarSala.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2C7BD26190BE9005DB85E /* TelaEntrarSala.swift */; };
 		55E2C7C126191046005DB85E /* TelaComoJogar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2C7C026191046005DB85E /* TelaComoJogar.swift */; };
 		55E2C7C426193AD3005DB85E /* TelaIntroGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2C7C326193AD3005DB85E /* TelaIntroGame.swift */; };
 		55E2C7C726193E45005DB85E /* TelaPuzzle1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2C7C626193E45005DB85E /* TelaPuzzle1.swift */; };
 		55E2C7CA26194027005DB85E /* TelaPuzzle4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E2C7C926194027005DB85E /* TelaPuzzle4.swift */; };
 		55E942022619608600C4220C /* TelaPuzzle5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E942012619608600C4220C /* TelaPuzzle5.swift */; };
+		8C073E1B8F3BBAF2BB671C39 /* Pods_Obscure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0F3464570940AAF6D39FF4 /* Pods_Obscure.framework */; };
 		CB348F002618F20A001C589B /* ObscureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB348EFF2618F20A001C589B /* ObscureApp.swift */; };
 		CB348F022618F20A001C589B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB348F012618F20A001C589B /* ContentView.swift */; };
 		CB348F042618F20B001C589B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB348F032618F20B001C589B /* Assets.xcassets */; };
@@ -26,18 +28,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F0F3464570940AAF6D39FF4 /* Pods_Obscure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Obscure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46CC40CB7599C3664DFC9748 /* Pods-Obscure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Obscure.release.xcconfig"; path = "Target Support Files/Pods-Obscure/Pods-Obscure.release.xcconfig"; sourceTree = "<group>"; };
 		552664682618FECA0074509C /* TelaCriarSala.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaCriarSala.swift; sourceTree = "<group>"; };
 		5530288A26194E1E00446014 /* TelaPuzzle2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaPuzzle2.swift; sourceTree = "<group>"; };
 		55448ECF2619FF9400128D1F /* TelaDeNome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaDeNome.swift; sourceTree = "<group>"; };
 		55448ED2261A03EA00128D1F /* TelaSalaDeEspera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaSalaDeEspera.swift; sourceTree = "<group>"; };
 		55448ED5261A084400128D1F /* TelaEsperaWaiting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaEsperaWaiting.swift; sourceTree = "<group>"; };
 		55448ED8261A0EA400128D1F /* TelaTempoAcabou.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaTempoAcabou.swift; sourceTree = "<group>"; };
+		55AAA807261A2B1800BF13ED /* AnimatedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedImageView.swift; sourceTree = "<group>"; };
 		55E2C7BD26190BE9005DB85E /* TelaEntrarSala.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaEntrarSala.swift; sourceTree = "<group>"; };
 		55E2C7C026191046005DB85E /* TelaComoJogar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaComoJogar.swift; sourceTree = "<group>"; };
 		55E2C7C326193AD3005DB85E /* TelaIntroGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaIntroGame.swift; sourceTree = "<group>"; };
 		55E2C7C626193E45005DB85E /* TelaPuzzle1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaPuzzle1.swift; sourceTree = "<group>"; };
 		55E2C7C926194027005DB85E /* TelaPuzzle4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaPuzzle4.swift; sourceTree = "<group>"; };
 		55E942012619608600C4220C /* TelaPuzzle5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaPuzzle5.swift; sourceTree = "<group>"; };
+		7563FD53EA9F13415DA5CF92 /* Pods-Obscure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Obscure.debug.xcconfig"; path = "Target Support Files/Pods-Obscure/Pods-Obscure.debug.xcconfig"; sourceTree = "<group>"; };
 		CB348EFC2618F20A001C589B /* Obscure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Obscure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB348EFF2618F20A001C589B /* ObscureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObscureApp.swift; sourceTree = "<group>"; };
 		CB348F012618F20A001C589B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,17 +57,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C073E1B8F3BBAF2BB671C39 /* Pods_Obscure.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C2CDE2FAD365C5885B7A3FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7563FD53EA9F13415DA5CF92 /* Pods-Obscure.debug.xcconfig */,
+				46CC40CB7599C3664DFC9748 /* Pods-Obscure.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B89E36C8D2D30B6F3F5E4ACE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F0F3464570940AAF6D39FF4 /* Pods_Obscure.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CB348EF32618F20A001C589B = {
 			isa = PBXGroup;
 			children = (
 				CB348EFE2618F20A001C589B /* Obscure */,
 				CB348EFD2618F20A001C589B /* Products */,
+				1C2CDE2FAD365C5885B7A3FE /* Pods */,
+				B89E36C8D2D30B6F3F5E4ACE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +114,7 @@
 				55E2C7C626193E45005DB85E /* TelaPuzzle1.swift */,
 				5530288A26194E1E00446014 /* TelaPuzzle2.swift */,
 				55E942012619608600C4220C /* TelaPuzzle5.swift */,
+				55AAA807261A2B1800BF13ED /* AnimatedImageView.swift */,
 				55E2C7C926194027005DB85E /* TelaPuzzle4.swift */,
 				55E2C7C026191046005DB85E /* TelaComoJogar.swift */,
 				CB348F032618F20B001C589B /* Assets.xcassets */,
@@ -112,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB348F0B2618F20B001C589B /* Build configuration list for PBXNativeTarget "Obscure" */;
 			buildPhases = (
+				4A32E14F2E456F7FF05BF025 /* [CP] Check Pods Manifest.lock */,
 				CB348EF82618F20A001C589B /* Sources */,
 				CB348EF92618F20A001C589B /* Frameworks */,
 				CB348EFA2618F20A001C589B /* Resources */,
+				CE460A7C7E12FAA895A41EAD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,6 +198,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4A32E14F2E456F7FF05BF025 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Obscure-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE460A7C7E12FAA895A41EAD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Obscure/Pods-Obscure-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Obscure/Pods-Obscure-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Obscure/Pods-Obscure-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CB348EF82618F20A001C589B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -176,6 +247,7 @@
 			files = (
 				55E2C7CA26194027005DB85E /* TelaPuzzle4.swift in Sources */,
 				55448ED3261A03EA00128D1F /* TelaSalaDeEspera.swift in Sources */,
+				55AAA808261A2B1800BF13ED /* AnimatedImageView.swift in Sources */,
 				552664692618FECA0074509C /* TelaCriarSala.swift in Sources */,
 				CB348F022618F20A001C589B /* ContentView.swift in Sources */,
 				55E942022619608600C4220C /* TelaPuzzle5.swift in Sources */,
@@ -312,6 +384,7 @@
 		};
 		CB348F0C2618F20B001C589B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7563FD53EA9F13415DA5CF92 /* Pods-Obscure.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -334,6 +407,7 @@
 		};
 		CB348F0D2618F20B001C589B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46CC40CB7599C3664DFC9748 /* Pods-Obscure.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
