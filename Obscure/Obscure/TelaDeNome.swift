@@ -6,85 +6,89 @@
 //
 
 import SwiftUI
-
+class Nome: ObservableObject {
+    @Published var nome = ""
+}
 struct TelaDeNome: View {
-    @State var CodigoSala = ""
-    
+    @ObservedObject var nome = Nome()
+    @State var finish = false
+    var isCreating:Bool = true
+    init(_ isCreating:Bool) {
+        self.isCreating = isCreating
+    }
     var body: some View {
-        ZStack {
-            Color.black
-                .ignoresSafeArea()
-            
-            VStack{
-                HStack{
-                    Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
-                        Text("<")
-                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                            .fontWeight(.semibold)
-                            .padding(.leading)
-                    }
-                    
-                    Spacer()
-                    
-                    Text("Criar sala")
-                        .foregroundColor(.white)
-                        .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
-                        .fontWeight(.semibold)
-                        .padding(.trailing, 30)
-                    Spacer()
-                    
-                }.padding()
-                
-                Spacer()
+            ZStack {
+                Color(.black)
+                    .ignoresSafeArea()
                 
                 VStack{
-                    Text("Quem ousa me desafiar?")
-                        .font(.title2)
-                        .foregroundColor(.white)
+                    Spacer()
                     
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 5, style: .continuous)
-                            .fill(Color.white)
-                            .frame(width: 328, height: 55)
-                        TextField("Código", text: $CodigoSala)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                            .foregroundColor(.black)
-                            .frame(width: 300.0)
-                            .background(Color.white)
-                            .padding()
+                    VStack{
+                        Text("Quem ousa me desafiar?")
+                            .font(.title2)
+                            .foregroundColor(.white)
+                        
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 5, style: .continuous)
+                                .fill(Color.white)
+                                .frame(width: 328, height: 55)
+                            TextField("Digite seu nome", text: $nome.nome)
+                                .textFieldStyle(RoundedBorderTextFieldStyle())
+                                .foregroundColor(.black)
+                                .frame(width: 300.0)
+                                .background(Color.white)
+                                .padding()
+                        }
                     }
-                }
-                
-                Spacer()
-                
-                Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
-                    Text("Próximo")
-                        .font(.title3)
-                        .fontWeight(.medium)
-                        .foregroundColor(.white)
-                        .font(.headline)
                     
-                }.frame(width: 328, height: 50)
-                .background(Color.red)
-                .cornerRadius(5)
-                .padding(.bottom, 400)
+                    Spacer()
+                    if(isCreating){
+                        NavigationLink(destination: TelaCriarSala(nome.nome, finish)) {
+                            Text("Próximo")
+                                .font(.title3)
+                                .fontWeight(.medium)
+                                .foregroundColor(.white)
+                                .font(.headline)
+                            
+                        }.frame(width: 328, height: 50)
+                        .background(Color(red: 163/255, green: 29/255, blue: 28/255, opacity: 1))
+                        .cornerRadius(5)
+                        .padding(.bottom, 400)
+                        .simultaneousGesture(TapGesture().onEnded{
+                            finish = true
+                        })
+                        .disabled(nome.nome == "")
+                        
+                    } else {
+                        NavigationLink(destination: TelaEntrarSala(nome.nome)) {
+                            Text("Próximo")
+                                .font(.title3)
+                                .fontWeight(.medium)
+                                .foregroundColor(.white)
+                                .font(.headline)
+                            
+                        }.frame(width: 328, height: 50)
+                        .background(Color(red: 163/255, green: 29/255, blue: 28/255, opacity: 1))
+                        .cornerRadius(5)
+                        .padding(.bottom, 400)
+                        .disabled(nome.nome == "")
+                    }
+                    
+                    
+                }
+                Image("home2")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 148, height: 187)
+                    .offset(y: 250)
                 
-                
-                Spacer()
-                
-            }
-            Image("home2")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 148, height: 187)
-                .offset(y: 350)
-            
         }
     }
 }
 
-struct TelaDeNome_Previews: PreviewProvider {
-    static var previews: some View {
-        TelaDeNome()
-    }
-}
+//struct TelaDeNome_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TelaDeNome(true)
+//    }
+//}

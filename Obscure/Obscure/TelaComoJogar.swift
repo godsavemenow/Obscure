@@ -15,15 +15,6 @@ struct TelaComoJogar: View {
             ScrollView{
                 VStack{
                     HStack{
-                        Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
-                            Text("<")
-                                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                                .fontWeight(.semibold)
-                                .padding(.leading)
-                        }
-                        
-                        Spacer()
-                        
                         Text("Como jogar")
                             .foregroundColor(.white)
                             .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)

@@ -1,5 +1,5 @@
 //
-//  TelaEsperaWaiting.swift
+//  TelaSalaDeEspera.swift
 //  Obscure
 //
 //  Created by Felipe on 04/04/21.
@@ -9,38 +9,24 @@ import SwiftUI
 
 struct TelaEsperaWaiting: View {
     
-    @State var jogador1 = "Ana"
-    @State var jogador2 = "Bruno"
-    @State var jogador3 = "Carol"
-    @State var jogador4 = "Daniel"
-    @State var jogador5 = "Elaine"
-    
+    @State var codigo = ""
+    @State var finish = false
+    @State var nome = ""
+    @State var isOwner = false
+    @ObservedObject var room : WaitingRoomModelView = WaitingRoomModelView(code: "", nome: "")
+    init(_ finish:Bool, _ codigo:String, _ nome:String, _ isOwner:Bool) {
+        self.finish = finish
+        self.codigo = codigo
+        self.nome = nome
+        self.isOwner = isOwner
+        self.room = WaitingRoomModelView(code: codigo, nome: nome)
+    }
     var body: some View {
+        if room.state == "queue"{
         ZStack {
             Color.black
                 .ignoresSafeArea()
             VStack {
-                HStack{
-                    Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
-                        Text("<")
-                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                            .fontWeight(.semibold)
-                            .padding(.leading)
-                    }
-                    
-                    Spacer()
-                    
-                    Text("Criar sala")
-                        .foregroundColor(.white)
-                        .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
-                        .fontWeight(.semibold)
-                        .padding(.trailing, 30)
-                    Spacer()
-                    
-                }.padding()
-                
-                Spacer()
-                
                 Text("Jogadores")
                     .font(.title3)
                     .fontWeight(.medium)
@@ -48,37 +34,18 @@ struct TelaEsperaWaiting: View {
                     .padding()
                 
                 VStack {
-                    Text("\(jogador1)")
-                        .fontWeight(.medium)
-                        .foregroundColor(.white)
-                        .padding(.top, 10)
-                    Text("\(jogador2)")
-                        .fontWeight(.medium)
-                        .foregroundColor(.white)
-                        .padding(.top, 10)
-                    Text("\(jogador3)")
-                        .fontWeight(.medium)
-                        .foregroundColor(.white)
-                        .padding(.top, 10)
-                    Text("\(jogador4)")
-                        .fontWeight(.medium)
-                        .foregroundColor(.white)
-                        .padding(.top, 10)
-                    Text("\(jogador5)")
-                        .fontWeight(.medium)
-                        .foregroundColor(.white)
-                        .padding(.top, 10)
+                    ForEach(0..<room.players.count, id: \.self) { count in
+                        Text(room.players[count])
+                            .foregroundColor(.white)
+                    }
                 }
                 Spacer()
                 
-                Text("Aguarde o anfitrião iniciar o jogo")
-                    .font(.system(size: 19))
-                    .foregroundColor(.white)
-                    .offset(y: 20)
+                    Text("Aguarde o anfitrião iniciar a partida").foregroundColor(.white)
                 
                 Image("cortedesangue")
                     .resizable()
-                    .frame(width: 280, height: 32.44, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 328, height: 32.44, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .offset(y: 12)
                 
                 Image("Hands3")
@@ -86,12 +53,22 @@ struct TelaEsperaWaiting: View {
                     .frame(width: 414, height: 306)
                     .offset(y: 35)
             }
-        }
-    }
+            }
+        }else if(room.state == "puzzle1"){
+            TelaPuzzle1(room, nome: nome)
+        }else if(room.state == "puzzle2"){
+            TelaPuzzle2(room, nome: nome)
+        }else if(room.state == "puzzle3"){
+            TelaPuzzle3(room, nome: nome)
+        }else if(room.state == "puzzle4"){
+            TelaPuzzle4(room, nome: nome)
+        }else if(room.state == "puzzle5"){
+            TelaPuzzle5(room, nome: nome)
+        }    }
 }
 
-struct TelaEsperaWaiting_Previews: PreviewProvider {
-    static var previews: some View {
-        TelaEsperaWaiting()
-    }
-}
+//struct TelaSalaDeEspera_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TelaSalaDeEspera()
+//    }
+//}
